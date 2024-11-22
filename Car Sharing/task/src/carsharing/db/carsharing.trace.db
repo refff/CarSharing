@@ -1,0 +1,18 @@
+2024-11-21 22:20:02 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "Create table IF NOT EXISTS company (id integer primary key [*]AUTO_INCREMENT, name varchar not null unique);SET MODE MySQL;"; expected "HASH, CONSTRAINT, COMMENT, UNIQUE, NOT NULL, NULL, CHECK, REFERENCES, ,, )"; SQL statement:
+Create table IF NOT EXISTS company (id integer primary key AUTO_INCREMENT, name varchar not null unique);SET MODE MySQL; [42001-214]
+2024-11-21 22:20:02 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "CREATE TABLE IF NOT EXISTS CAR (ID INTEGER PRIMARY KEY [*]AUTO_INCREMENT, NAME VARCHAR UNIQUE NOT NULL, COMPANY_ID INTEGER NOT NULL, CONSTRAINT FK_ID FOREIGN KEY (COMPANY_ID) REFERENCES COMPANY(ID));"; expected "HASH, CONSTRAINT, COMMENT, UNIQUE, NOT NULL, NULL, CHECK, REFERENCES, ,, )"; SQL statement:
+CREATE TABLE IF NOT EXISTS CAR (ID INTEGER PRIMARY KEY AUTO_INCREMENT, NAME VARCHAR UNIQUE NOT NULL, COMPANY_ID INTEGER NOT NULL, CONSTRAINT FK_ID FOREIGN KEY (COMPANY_ID) REFERENCES COMPANY(ID)); [42001-214]
+2024-11-21 22:20:02 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "Create table if not exists customer(id integer primary key [*]AUTO_INCREMENT, name varchar not null unique,RENTED_CAR_ID integer DEFAULT NULL,CONSTRAINT FK_CAR_ID FOREIGN KEY (RENTED_CAR_ID)REFERENCES CAR(ID));"; expected "HASH, CONSTRAINT, COMMENT, UNIQUE, NOT NULL, NULL, CHECK, REFERENCES, ,, )"; SQL statement:
+Create table if not exists customer(id integer primary key AUTO_INCREMENT, name varchar not null unique,RENTED_CAR_ID integer DEFAULT NULL,CONSTRAINT FK_CAR_ID FOREIGN KEY (RENTED_CAR_ID)REFERENCES CAR(ID)); [42001-214]
+2024-11-21 22:20:02 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "Create table IF NOT EXISTS company (id integer primary key [*]AUTO_INCREMENT, name varchar not null unique);SET MODE MySQL;"; expected "HASH, CONSTRAINT, COMMENT, UNIQUE, NOT NULL, NULL, CHECK, REFERENCES, ,, )"; SQL statement:
+Create table IF NOT EXISTS company (id integer primary key AUTO_INCREMENT, name varchar not null unique);SET MODE MySQL; [42001-214]
+2024-11-21 22:20:02 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "CREATE TABLE IF NOT EXISTS CAR (ID INTEGER PRIMARY KEY [*]AUTO_INCREMENT, NAME VARCHAR UNIQUE NOT NULL, COMPANY_ID INTEGER NOT NULL, CONSTRAINT FK_ID FOREIGN KEY (COMPANY_ID) REFERENCES COMPANY(ID));"; expected "HASH, CONSTRAINT, COMMENT, UNIQUE, NOT NULL, NULL, CHECK, REFERENCES, ,, )"; SQL statement:
+CREATE TABLE IF NOT EXISTS CAR (ID INTEGER PRIMARY KEY AUTO_INCREMENT, NAME VARCHAR UNIQUE NOT NULL, COMPANY_ID INTEGER NOT NULL, CONSTRAINT FK_ID FOREIGN KEY (COMPANY_ID) REFERENCES COMPANY(ID)); [42001-214]
+2024-11-21 22:20:02 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "Create table if not exists customer(id integer primary key [*]AUTO_INCREMENT, name varchar not null unique,RENTED_CAR_ID integer DEFAULT NULL,CONSTRAINT FK_CAR_ID FOREIGN KEY (RENTED_CAR_ID)REFERENCES CAR(ID));"; expected "HASH, CONSTRAINT, COMMENT, UNIQUE, NOT NULL, NULL, CHECK, REFERENCES, ,, )"; SQL statement:
+Create table if not exists customer(id integer primary key AUTO_INCREMENT, name varchar not null unique,RENTED_CAR_ID integer DEFAULT NULL,CONSTRAINT FK_CAR_ID FOREIGN KEY (RENTED_CAR_ID)REFERENCES CAR(ID)); [42001-214]
